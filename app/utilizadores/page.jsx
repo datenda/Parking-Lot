@@ -90,7 +90,7 @@ export default function UtilizadoresPage() {
   const fetchUsers = async () => {
     try {
       const response = await fetch(
-        "https://tfs-server.onrender.com/api/users/findAll"
+        "https://tfs-server-1.onrender.com/api/users/findAll"
       );
 
       if (!response.ok) {
@@ -146,7 +146,7 @@ export default function UtilizadoresPage() {
       };
       try {
         const response = await fetch(
-          "https://tfs-server.onrender.com/api/users/find",
+          "https://tfs-server-1.onrender.com/api/users/find",
           {
             method: "POST",
             headers: {
@@ -185,7 +185,7 @@ export default function UtilizadoresPage() {
     };
     try {
       const response = await fetch(
-        "https://tfs-server.onrender.com/api/users/edit",
+        "https://tfs-server-1.onrender.com/api/users/edit",
         {
           method: "POST",
           headers: {
@@ -218,7 +218,7 @@ export default function UtilizadoresPage() {
     };
     try {
       const response = await fetch(
-        "https://tfs-server.onrender.com/api/users",
+        "https://tfs-server-1.onrender.com/api/users",
         {
           method: "POST",
           headers: {
@@ -257,7 +257,7 @@ export default function UtilizadoresPage() {
     };
     try {
       const response = await fetch(
-        "https://tfs-server.onrender.com/api/users/remover",
+        "https://tfs-server-1.onrender.com/api/users/remover",
         {
           method: "DELETE",
           headers: {

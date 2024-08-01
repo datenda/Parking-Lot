@@ -102,14 +102,17 @@ export default function RegistosPage() {
         };
 
         console.log(requestBody);
-        let res = await fetch("https://tfs-server.onrender.com/api/auditLog", {
-          method: "POST",
-          signal,
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(requestBody),
-        });
+        let res = await fetch(
+          "https://tfs-server-1.onrender.com/api/auditLog",
+          {
+            method: "POST",
+            signal,
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(requestBody),
+          }
+        );
         if (!res.ok) {
           throw new Error("Failed to fetch data");
         }

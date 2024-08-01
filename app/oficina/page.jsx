@@ -61,7 +61,7 @@ export default function GalerasPage() {
     async load({ signal }) {
       try {
         let res = await fetch(
-          "https://tfs-server.onrender.com/api/galera/oficina",
+          "https://tfs-server-1.onrender.com/api/galera/oficina",
           {
             method: "GET",
             signal,
@@ -142,7 +142,7 @@ export default function GalerasPage() {
       };
       console.log(requestBody);
       let fetchLugar = await fetch(
-        "https://tfs-server.onrender.com/api/galera/mudar",
+        "https://tfs-server-1.onrender.com/api/galera/mudar",
         {
           method: "POST",
           headers: {
@@ -209,7 +209,7 @@ export default function GalerasPage() {
     };
     console.log(veiculo);
     let fetchLugar = await fetch(
-      "https://tfs-server.onrender.com/api/galera/removerStatus",
+      "https://tfs-server-1.onrender.com/api/galera/removerStatus",
       {
         method: "POST",
         headers: {

@@ -61,7 +61,7 @@ export default function ExternasPage() {
     async load({ signal }) {
       try {
         let res = await fetch(
-          "https://tfs-server.onrender.com/api/galera/externa",
+          "https://tfs-server-1.onrender.com/api/galera/externa",
           {
             method: "GET",
             signal,
@@ -142,7 +142,7 @@ export default function ExternasPage() {
       };
 
       let fetchLugar = await fetch(
-        "https://tfs-server.onrender.com/api/galera/mudar",
+        "https://tfs-server-1.onrender.com/api/galera/mudar",
         {
           method: "POST",
           headers: {

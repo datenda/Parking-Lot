@@ -17,7 +17,7 @@ export default function Home() {
       };
 
       const response = await fetch(
-        "https://tfs-server.onrender.com/api/users/login",
+        "https://tfs-server-1.onrender.com/api/users/login",
         {
           method: "POST",
           headers: {

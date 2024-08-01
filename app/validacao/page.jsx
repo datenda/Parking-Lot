@@ -11,7 +11,7 @@ export default function ValidarPage() {
   const listaValidar = async () => {
     try {
       const response = await fetch(
-        "https://tfs-server.onrender.com/api/galera/porValidar",
+        "https://tfs-server-1.onrender.com/api/galera/porValidar",
         {
           method: "GET",
           headers: {
@@ -51,7 +51,7 @@ export default function ValidarPage() {
       };
 
       const response = await fetch(
-        "https://tfs-server.onrender.com/api/galera/validar",
+        "https://tfs-server-1.onrender.com/api/galera/validar",
         {
           method: "POST",
           headers: {

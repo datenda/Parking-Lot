@@ -36,7 +36,7 @@ export default function GalerasPage() {
     async load({ signal }) {
       try {
         let res = await fetch(
-          "https://tfs-server.onrender.com/api/galera/prontas",
+          "https://tfs-server-1.onrender.com/api/galera/prontas",
           {
             method: "GET",
             signal,

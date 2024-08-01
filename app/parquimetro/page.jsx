@@ -101,7 +101,7 @@ export default function ParquimetroPage() {
     async load({ signal }) {
       try {
         let res = await fetch(
-          "https://tfs-server.onrender.com/api/parquimetro",
+          "https://tfs-server-1.onrender.com/api/parquimetro",
           {
             method: "GET",
             signal,
@@ -169,7 +169,7 @@ export default function ParquimetroPage() {
         matricula: selected.galera,
       };
       let response = await fetch(
-        "https://tfs-server.onrender.com/api/galera/verificar",
+        "https://tfs-server-1.onrender.com/api/galera/verificar",
         {
           method: "POST",
           headers: {
@@ -328,7 +328,7 @@ export default function ParquimetroPage() {
         };
 
         let fetch3 = await fetch(
-          "https://tfs-server.onrender.com/api/parquimetro/remover",
+          "https://tfs-server-1.onrender.com/api/parquimetro/remover",
           {
             method: "POST",
             headers: {
@@ -385,7 +385,7 @@ export default function ParquimetroPage() {
         };
 
         let fetch2 = await fetch(
-          "https://tfs-server.onrender.com/api/parquimetro/estacionar",
+          "https://tfs-server-1.onrender.com/api/parquimetro/estacionar",
           {
             method: "POST",
             headers: {
@@ -453,7 +453,7 @@ export default function ParquimetroPage() {
       };
 
       let fetch2 = await fetch(
-        "https://tfs-server.onrender.com/api/parquimetro/novaGalera",
+        "https://tfs-server-1.onrender.com/api/parquimetro/novaGalera",
         {
           method: "POST",
           headers: {
@@ -498,12 +498,15 @@ export default function ParquimetroPage() {
     const handleGalera = async () => {
       onCloseCreate();
       try {
-        let fetch1 = await fetch("https://tfs-server.onrender.com/api/galera", {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        let fetch1 = await fetch(
+          "https://tfs-server-1.onrender.com/api/galera",
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         if (!fetch1.ok) {
           throw new Error("Failed to fetch data");
         }
@@ -541,7 +544,7 @@ export default function ParquimetroPage() {
         local: local,
       };
       let fetch1 = await fetch(
-        "https://tfs-server.onrender.com/api/parquimetro/perigoso",
+        "https://tfs-server-1.onrender.com/api/parquimetro/perigoso",
         {
           method: "POST",
           headers: {
@@ -580,7 +583,7 @@ export default function ParquimetroPage() {
       };
 
       let fetchLugar = await fetch(
-        "https://tfs-server.onrender.com/api/parquimetro/novoLugar",
+        "https://tfs-server-1.onrender.com/api/parquimetro/novoLugar",
         {
           method: "POST",
           headers: {
@@ -623,7 +626,7 @@ export default function ParquimetroPage() {
       };
 
       let fetchLugar = await fetch(
-        "https://tfs-server.onrender.com/api/galera/mudar",
+        "https://tfs-server-1.onrender.com/api/galera/mudar",
         {
           method: "POST",
           headers: {
@@ -685,7 +688,7 @@ export default function ParquimetroPage() {
     };
     try {
       let fetchLugar = await fetch(
-        "https://tfs-server.onrender.com/api/parquimetro/removerLugar",
+        "https://tfs-server-1.onrender.com/api/parquimetro/removerLugar",
         {
           method: "DELETE",
           headers: {
