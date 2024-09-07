@@ -1,6 +1,4 @@
-# Next.js & NextUI Template
-
-This is a template for creating applications using Next.js 13 (app directory) and NextUI (v2).
+## Access this link https://park-vert.vercel.app and use the next credentials: Username:123 Password:qweqwe
 
 ## Technologies Used
 
@@ -55,10 +53,6 @@ The Parking Lot Management System is designed to streamline the process of parki
    - Customers can track their vehicle's status and expected service completion through a client portal.
 
 ## How to Use
-
-## Access this link https://park-vert.vercel.app and use the next credentials: Username:123 Password:qweqwe
-
-Or
 
 ### Use the template with create-next-app
 
